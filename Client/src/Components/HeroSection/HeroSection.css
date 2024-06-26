@@ -6,6 +6,7 @@
   background-size: cover; /* Ensure the background covers the entire area */
   width: 100%;
   height: 775px;
+  overflow: hidden;
 }
 .Hero {
   font-family: "Barlow", sans-serif;
@@ -298,5 +299,50 @@
   }
   .Heroheadings > .herobutton > div > .herobtnicon {
     font-size: 30px;
+  }
+}
+@media(max-width:391px){
+  .mainhero{
+    width: 100%;
+  }
+  .mainhero>.Hero>.HeroContent>.Heroheadings>h1{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 11px;
+    
+  }
+  .mainhero>.Hero>.HeroContent>.Heroheadings{
+    margin: 0;
+    padding: 0;
+    
+
+    gap: 0;
+  }
+  .mainhero>.Hero>.HeroContent>.Heroheadings>.roteting{
+    padding: 0;
+
+    overflow: hidden;
+    width:100%;
+    margin: 0;
+    height: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .mainhero>.Hero>.HeroContent>.Heroheadings>.roteting>h1{
+    
+    height: 10px;
+   
+    height: 30px;
+    width: 100%;
+    line-height: 12px;
+   
+    padding: 0;
+  }
+  .mainhero>.Hero>.HeroContent>.Heroheadings>.herodes{
+   
+    margin: 0;
+    padding: 0;
   }
 }

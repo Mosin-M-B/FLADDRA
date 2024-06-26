@@ -1,6 +1,6 @@
 import industries from "../../assets/IndustrySolutions.jpg";
 import circle from "../../assets/circle.png";
-import { Arrowbutton } from "../Arrow Button/Arrowbutton";
+import { Arrowbutton2 } from "../Arrow Button/Arrowbutton";
 import "./Section2.css";
 
 export const Section2 = () => {
@@ -28,7 +28,7 @@ export const Section2 = () => {
             <li>Optimize their tech stack</li>
           </ol>
           </div>
-          <Arrowbutton name="Find Out How"  />
+          <Arrowbutton2 name="Find Out How"  />
         </div>
       </div>
     </div>

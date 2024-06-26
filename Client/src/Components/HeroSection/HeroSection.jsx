@@ -47,7 +47,7 @@ export const HeroSection = () => {
   return (
     <div className="mainhero">
       <div className="Hero">
-        <div>
+        <div className="HeroContent">
           <div className="Heroheadings">
             <h1 className="h1">Turn Data Into</h1>
             <div className="roteting">
