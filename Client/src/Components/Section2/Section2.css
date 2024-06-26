@@ -258,8 +258,13 @@
   }
 
   .sectionContent {
+<<<<<<< HEAD
    
       width: 40vh;
+=======
+    
+      width: 100%;
+>>>>>>> 3306361f53b695f72a6d1364f32263b7bf70d214
       flex-direction: column;
       align-items: center;
       margin: 0;
