@@ -46,7 +46,9 @@ export const TabSection = () => {
               ))}
             </ul>
             <br/>
-            <Arrowbutton name={"Learn More"} />
+            <a href={EXAMPLES[selectedTopic].url} target="blank">
+            <Arrowbutton name={"Learn More"} /> 
+            </a>
           </div>
           <div className="tabsimg">
             <img src={EXAMPLES[selectedTopic].img} alt={selectedTopic} />
