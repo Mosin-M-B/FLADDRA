@@ -9,7 +9,8 @@ export const EXAMPLES = {
       'Platform Modernization & Migration',
       'Visualization & Reporting',
       'Analysis & Activation'],
-    img: Dataimg
+    img: Dataimg,
+    url:'https://g.co/kgs/K2PVmoH'
   },
   Cloud: {
     title: "Harness the Power",
