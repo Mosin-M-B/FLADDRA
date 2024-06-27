@@ -22,7 +22,9 @@ export const Footer = () => {
             <FaLinkedin />
             </a>
             <FaYoutubeSquare />
+            <a href="https://www.instagram.com/fladdraglobal?igsh=MXFmbTV2OGdmZTJkZg==" target="_blank">
             <FaSquareInstagram />
+            </a>
             <FaFacebookSquare />
             <FaSquareXTwitter />
           </div>
