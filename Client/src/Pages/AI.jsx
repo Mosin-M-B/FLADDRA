@@ -1,9 +1,9 @@
 import React from 'react';
 
 const products = [
-  { id: 1, name: 'Product 1', price: 100 },
-  { id: 2, name: 'Product 2', price: 200 },
-  { id: 3, name: 'Product 3', price: 300 },
+  { id: 1, name: 'Product 1', price: 100 , ids:'pro1' },
+  { id: 2, name: 'Product 2', price: 200 , ids:'pro2'},
+  { id: 3, name: 'Product 3', price: 300 , ids:'pro3'},
 ];
 
 export const AI = () => {
@@ -30,7 +30,7 @@ export const AI = () => {
   return (
     <div style={{display:'flex' ,gap:"20px" }}>
       {products.map((product) => (
-        <div key={product.id} onClick={() => handleProductClick(product)} style={{border:'solid black'}} className='pro'>
+        <div key={product.id} onClick={() => handleProductClick(product)} style={{border:'solid black'}} id={product.ids}>
           <h2>{product.name}</h2>
           <p>Price: ${product.price}</p>
         </div>
