@@ -28,9 +28,9 @@ export const AI = () => {
   };
 
   return (
-    <div>
+    <div style={{display:'flex' ,gap:"20px" }}>
       {products.map((product) => (
-        <div key={product.id} onClick={() => handleProductClick(product)}>
+        <div key={product.id} onClick={() => handleProductClick(product)} style={{border:'solid black'}}>
           <h2>{product.name}</h2>
           <p>Price: ${product.price}</p>
         </div>
