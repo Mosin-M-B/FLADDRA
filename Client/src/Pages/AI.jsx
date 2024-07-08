@@ -1,23 +1,41 @@
+import React from 'react';
+
+const products = [
+  { id: 1, name: 'Product 1', price: 100 },
+  { id: 2, name: 'Product 2', price: 200 },
+  { id: 3, name: 'Product 3', price: 300 },
+];
+
 export const AI = () => {
- const push = async () => {
-  try {
-    const response = await fetch("https://umairrinde.pythonanywhere.com/api/script/key=button_click");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error('Error fetching data:', error);
-  }
-};
+  const handleProductClick = (product) => {
+    // Ensure dataLayer array exists
+    window.dataLayer = window.dataLayer || [];
+
+    // Push product data to the data layer dynamically
+    window.dataLayer.push({
+      event: 'product_click',
+      product_id: product.id,
+      product_name: product.name,
+      product_price: product.price
+    });
+
+    console.log('Data layer push:', {
+      event: 'product_click',
+      product_id: product.id,
+      product_name: product.name,
+      product_price: product.price
+    });
+  };
+
   return (
     <div>
-      <h1>AI Solutions</h1>
-      <p>Welcome to the AI Solutions page!</p>
-      <button id='btn' className="click">
-        click
-        </button>
+      {products.map((product) => (
+        <div key={product.id} onClick={() => handleProductClick(product)}>
+          <h2>{product.name}</h2>
+          <p>Price: ${product.price}</p>
+        </div>
+      ))}
     </div>
   );
 };
+
