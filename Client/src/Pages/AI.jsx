@@ -30,7 +30,7 @@ export const AI = () => {
   return (
     <div style={{display:'flex' ,gap:"20px" }}>
       {products.map((product) => (
-        <div key={product.id} onClick={() => handleProductClick(product)} style={{border:'solid black'}}>
+        <div key={product.id} onClick={() => handleProductClick(product)} style={{border:'solid black'}} className='pro'>
           <h2>{product.name}</h2>
           <p>Price: ${product.price}</p>
         </div>
